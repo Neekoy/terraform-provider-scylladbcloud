@@ -79,7 +79,7 @@ func ResourceCluster() *schema.Resource {
 			"user_api_interface": {
 				Description: "Type of API interface, either CQL or ALTERNATOR",
 				Optional:    true,
-				ForceNew:    true,
+				ForceNew:    false,
 				Type:        schema.TypeString,
 				Default:     "CQL",
 			},

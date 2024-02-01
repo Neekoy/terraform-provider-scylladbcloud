@@ -79,14 +79,14 @@ func ResourceCluster() *schema.Resource {
 			"user_api_interface": {
 				Description: "Type of API interface, either CQL or ALTERNATOR",
 				Optional:    true,
-				ForceNew:    false,
+				ForceNew:    true,
 				Type:        schema.TypeString,
 				Default:     "CQL",
 			},
 			"alternator_write_isolation": {
 				Description: "Default write isolation policy",
 				Optional:    true,
-				ForceNew:    true,
+				ForceNew:    false,
 				Type:        schema.TypeString,
 				Default:     "only_rmw_uses_lwt",
 			},
